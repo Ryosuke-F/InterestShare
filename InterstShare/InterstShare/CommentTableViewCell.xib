@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Comment Cell" id="KGk-i7-Jjw" customClass="CommentTableViewCell" customModule="InterstShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZB-kc-AJE">
+                        <rect key="frame" x="249" y="8" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="XbY-tW-9Iz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iel-cO-mgd">
+                        <rect key="frame" x="16" y="28" width="290" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="290" id="Z6i-j6-D1a"/>
+                        </constraints>
+                        <string key="text">We love romantic stories. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulz-Bc-Ajy" customClass="DesignableButton" customModule="InterstShare" customModuleProvider="target">
+                        <rect key="frame" x="16" y="75" width="59" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JhL-CH-V8n"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="Likes">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIj-zY-ye1">
+                        <rect key="frame" x="16" y="7" width="48" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iel-cO-mgd" firstAttribute="top" secondItem="OIj-zY-ye1" secondAttribute="bottom" id="1bA-QS-zG1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ulz-Bc-Ajy" secondAttribute="trailing" constant="237" id="1tA-If-pgJ"/>
+                    <constraint firstItem="Ulz-Bc-Ajy" firstAttribute="top" secondItem="iel-cO-mgd" secondAttribute="bottom" id="7LT-qP-UNi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ulz-Bc-Ajy" secondAttribute="bottom" constant="-5" id="9pf-c3-hAo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iel-cO-mgd" secondAttribute="trailing" constant="6" id="GC7-mg-0I3"/>
+                    <constraint firstItem="iZB-kc-AJE" firstAttribute="leading" secondItem="OIj-zY-ye1" secondAttribute="trailing" constant="185" id="KlH-XG-fFB"/>
+                    <constraint firstItem="Ulz-Bc-Ajy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="LhZ-92-tOa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iZB-kc-AJE" secondAttribute="trailing" constant="8" id="MgH-2O-yoX"/>
+                    <constraint firstItem="OIj-zY-ye1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="abh-UU-3W6"/>
+                    <constraint firstItem="OIj-zY-ye1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="hyz-3W-UNY"/>
+                    <constraint firstItem="iZB-kc-AJE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="keQ-aS-rVz"/>
+                    <constraint firstItem="iel-cO-mgd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="oiW-Jg-S8g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentTextLabel" destination="iel-cO-mgd" id="P6t-pQ-sn3"/>
+                <outlet property="createdAtLabel" destination="iZB-kc-AJE" id="mbb-81-fSg"/>
+                <outlet property="likeButton" destination="Ulz-Bc-Ajy" id="tTd-vx-pgC"/>
+                <outlet property="userNameLabel" destination="OIj-zY-ye1" id="amZ-gN-mfJ"/>
+            </connections>
+            <point key="canvasLocation" x="122" y="255.5"/>
+        </tableViewCell>
+    </objects>
+</document>

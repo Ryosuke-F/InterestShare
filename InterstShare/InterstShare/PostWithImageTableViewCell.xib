@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostWithImage" id="KGk-i7-Jjw" customClass="PostWithImageTableViewCell" customModule="InterstShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="387"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile1" translatesAutoresizingMaskIntoConstraints="NO" id="XPM-GR-Oox">
+                        <rect key="frame" x="15" y="16" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="9p1-Tz-UqZ"/>
+                            <constraint firstAttribute="height" constant="35" id="fCV-X5-9Qv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToJ-mz-w7x">
+                        <rect key="frame" x="66" y="23" width="48" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="Bz0-rK-rEk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p6" translatesAutoresizingMaskIntoConstraints="NO" id="6he-Hb-9rK">
+                        <rect key="frame" x="15" y="67" width="290" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="DQ3-gv-98c"/>
+                            <constraint firstAttribute="width" constant="290" id="bV5-1S-YqP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAP-Cj-Gz5">
+                        <rect key="frame" x="262" y="23" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8l7-iS-tSc"/>
+                            <constraint firstAttribute="width" constant="42" id="nJd-bd-D2I"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOL-eo-t5L">
+                        <rect key="frame" x="15" y="283" width="290" height="41"/>
+                        <string key="text">We love romantic stories. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjc-f1-Hwa" customClass="DesignableButton" customModule="InterstShare" customModuleProvider="target">
+                        <rect key="frame" x="16" y="340" width="120" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="06z-Ek-G5t"/>
+                            <constraint firstAttribute="width" constant="120" id="R4g-G4-L9p"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="📷 15 Likes">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fjc-f1-Hwa" firstAttribute="top" secondItem="TOL-eo-t5L" secondAttribute="bottom" constant="16" id="0Vn-1Z-IQo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XAP-Cj-Gz5" secondAttribute="trailing" constant="8" id="2jo-YS-5vf"/>
+                    <constraint firstItem="XAP-Cj-Gz5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="Bpb-eT-MOh"/>
+                    <constraint firstItem="6he-Hb-9rK" firstAttribute="top" secondItem="XPM-GR-Oox" secondAttribute="bottom" constant="16" id="Fkq-QV-HB9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fjc-f1-Hwa" secondAttribute="bottom" constant="8" id="IrB-N2-D20"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fjc-f1-Hwa" secondAttribute="trailing" constant="176" id="KBc-bg-0QE"/>
+                    <constraint firstItem="fjc-f1-Hwa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="SOU-Fu-NQh"/>
+                    <constraint firstItem="XAP-Cj-Gz5" firstAttribute="leading" secondItem="ToJ-mz-w7x" secondAttribute="trailing" constant="148" id="Sfj-o6-1LU"/>
+                    <constraint firstItem="XPM-GR-Oox" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="aLV-M2-ix6"/>
+                    <constraint firstItem="ToJ-mz-w7x" firstAttribute="leading" secondItem="XPM-GR-Oox" secondAttribute="trailing" constant="16" id="ayU-MA-vYk"/>
+                    <constraint firstItem="TOL-eo-t5L" firstAttribute="top" secondItem="6he-Hb-9rK" secondAttribute="bottom" constant="16" id="bGl-ku-eiv"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TOL-eo-t5L" secondAttribute="trailing" constant="7" id="dHf-3P-nyf"/>
+                    <constraint firstItem="6he-Hb-9rK" firstAttribute="top" secondItem="XAP-Cj-Gz5" secondAttribute="bottom" constant="23" id="gc3-mj-0VU"/>
+                    <constraint firstItem="XPM-GR-Oox" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="jcm-Va-s0X"/>
+                    <constraint firstItem="TOL-eo-t5L" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="pJa-IV-qSS"/>
+                    <constraint firstItem="ToJ-mz-w7x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="vtt-o5-dPK"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6he-Hb-9rK" secondAttribute="trailing" constant="7" id="xaw-IY-hnb"/>
+                    <constraint firstItem="6he-Hb-9rK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="z6L-Wg-9CE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="createdAtLabel" destination="XAP-Cj-Gz5" id="ylj-oZ-XMn"/>
+                <outlet property="likeButton" destination="fjc-f1-Hwa" id="3PP-1d-DbG"/>
+                <outlet property="postImageView" destination="6he-Hb-9rK" id="dpI-v2-Wgf"/>
+                <outlet property="postTextLabel" destination="TOL-eo-t5L" id="tT3-tG-EPM"/>
+                <outlet property="userNameLabel" destination="ToJ-mz-w7x" id="guA-C0-AeC"/>
+                <outlet property="userProfileImageView" destination="XPM-GR-Oox" id="g6D-3K-hq4"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="p6" width="2500" height="1667"/>
+        <image name="profile1" width="748" height="640"/>
+    </resources>
+</document>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCellWithoutImage" id="KGk-i7-Jjw" customClass="interest2TableViewCell" customModule="InterstShare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReC-Gw-3D1">
+                        <rect key="frame" x="249" y="23" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="XlH-8q-MQP"/>
+                            <constraint firstAttribute="width" constant="55" id="Xpm-Ub-3uf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tge-8w-y5D">
+                        <rect key="frame" x="16" y="67" width="290" height="41"/>
+                        <string key="text">We love romantic stories. We walked to Antartica yesterday, and camped with some cute pinguines, and talked about this wonderful app idea. 🐧⛺️✨</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEY-po-avj" customClass="DesignableButton" customModule="InterstShare" customModuleProvider="target">
+                        <rect key="frame" x="16" y="124" width="120" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="7Va-Ka-iSG"/>
+                            <constraint firstAttribute="height" constant="30" id="ocB-Sd-ycD"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="📷 15 Likes">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="likeButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4rY-AF-Mnd"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSX-u4-Zha" customClass="DesignableButton" customModule="InterstShare" customModuleProvider="target">
+                        <rect key="frame" x="138" y="124" width="120" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="dCu-yR-ZYb"/>
+                            <constraint firstAttribute="height" constant="30" id="dqj-Gl-BbA"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="👣 Comment">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="commentButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dfq-LA-u1M"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2015-06-10 at 5.05.21 PM" translatesAutoresizingMaskIntoConstraints="NO" id="eKA-x1-6kc">
+                        <rect key="frame" x="16" y="16" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="f41-AF-Z4g"/>
+                            <constraint firstAttribute="width" constant="35" id="wJP-V2-vPe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KT0-Zb-DHI">
+                        <rect key="frame" x="67" y="23" width="48" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="tge-8w-y5D" secondAttribute="trailing" constant="6" id="2Xa-at-96y"/>
+                    <constraint firstItem="ReC-Gw-3D1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="2dr-Pp-Zs7"/>
+                    <constraint firstItem="KT0-Zb-DHI" firstAttribute="leading" secondItem="eKA-x1-6kc" secondAttribute="trailing" constant="16" id="3jf-qz-6JS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kSX-u4-Zha" secondAttribute="bottom" constant="8" id="7mp-TO-5Ic"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MEY-po-avj" secondAttribute="bottom" constant="8" id="F0D-k9-88s"/>
+                    <constraint firstItem="MEY-po-avj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="JIE-ml-UTo"/>
+                    <constraint firstItem="eKA-x1-6kc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="PPM-1P-BoJ"/>
+                    <constraint firstItem="kSX-u4-Zha" firstAttribute="top" secondItem="tge-8w-y5D" secondAttribute="bottom" constant="16" id="PU4-0U-Cmf"/>
+                    <constraint firstItem="kSX-u4-Zha" firstAttribute="leading" secondItem="MEY-po-avj" secondAttribute="trailing" constant="2" id="UKs-Sk-zOY"/>
+                    <constraint firstItem="tge-8w-y5D" firstAttribute="top" secondItem="eKA-x1-6kc" secondAttribute="bottom" constant="16" id="WGX-06-N1Y"/>
+                    <constraint firstItem="MEY-po-avj" firstAttribute="top" secondItem="tge-8w-y5D" secondAttribute="bottom" constant="16" id="XJz-7M-2Fu"/>
+                    <constraint firstItem="KT0-Zb-DHI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="f25-F0-HMm"/>
+                    <constraint firstItem="kSX-u4-Zha" firstAttribute="leading" secondItem="MEY-po-avj" secondAttribute="trailing" constant="2" id="fNC-Mq-ybd"/>
+                    <constraint firstItem="tge-8w-y5D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="nUz-my-I2t"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ReC-Gw-3D1" secondAttribute="trailing" constant="8" id="swD-eN-rnd"/>
+                    <constraint firstItem="eKA-x1-6kc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="uZ8-go-KKo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentButton" destination="kSX-u4-Zha" id="983-VR-ahm"/>
+                <outlet property="createdAtLabel" destination="ReC-Gw-3D1" id="C3d-0H-Z2g"/>
+                <outlet property="likeButton" destination="MEY-po-avj" id="t2S-nh-3jP"/>
+                <outlet property="postTextLabel" destination="tge-8w-y5D" id="6eH-iP-jlc"/>
+                <outlet property="userNameLabel" destination="KT0-Zb-DHI" id="0Ov-I5-3Ji"/>
+                <outlet property="userProfileImageView" destination="eKA-x1-6kc" id="cUF-y1-8yT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Screen Shot 2015-06-10 at 5.05.21 PM" width="798" height="604"/>
+    </resources>
+</document>
